@@ -1,0 +1,47 @@
+.container{
+    margin:0 auto;
+    max-width: 400px;
+    text-align: center;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 48px;
+    text-shadow: 3px 3px 5px rgb(65, 35, 202);
+}
+.timer{
+    font-size: 72px;
+    margin:55px 0px;
+    color:rgb(59, 58, 58);
+    text-shadow:2px 2px 5px black;
+   
+}
+button{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin:10px;
+    border:none;
+    color: white;
+    border-radius: 5px;
+    width:90px;
+    cursor:pointer;
+    box-shadow: 2px 2px 5px black;
+    transition: opacity .3s ease;
+}
+button:hover{
+    opacity: .6;
+}
+button:active{
+    transform: scale(.8);
+}
+#start{
+    background-color: green;
+    text-transform: uppercase;
+    
+}
+#stop{
+    background-color: red;
+    text-transform: uppercase;
+}
+#reset{
+    background-color: orange;
+}
