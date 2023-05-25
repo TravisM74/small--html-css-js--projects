@@ -9,7 +9,6 @@ const spinButtonEl = document.getElementById("play-again");
 const gridContainerEl = document.getElementById("grid-container");
 
 let balance =0;
-let conditionsMeet = false;
 const ROWS = 3;
 const COLS = 3;
 
@@ -21,33 +20,36 @@ const SYMBOLS_COUNT = {
 }
 
 const SYMBOL_VALUES ={
-    A: 5,
-    B: 4,
-    C: 3,
+    A: 100,
+    B: 20,
+    C: 7,
     D: 2
 }
+let conditionsMeet = true;
 
 const testConditions = ()=> {
-    conditionsMeet = false;
+    conditionsMeet = true;
     infoPanelEl.innerText="Spin to win!";
-    if(balance > 0) conditionsMeet= true;
+    if (balance < 0) {
+        conditionsMeet= false;
+        infoPanelEl.innerText="More money needed to play";
+    }
     if (numberOfRowsEl.value > 0 && numberOfRowsEl.value <= 3){
-        conditionsMeet= true;
+        console.log("rows selected");
     } else {
         infoPanelEl.innerText="pick between 1 and 3 rows";
         conditionsMeet= false;
     };
     if (betValueEl.value > 0) {
-        conditionsMeet = true;
+        console.log("0 or positive bet value");
     } else{
-        infoPanelEl.innerText="you need to bet something!";
+        infoPanelEl.innerText="fix your bet !";
+        conditionsMeet = false;
     }
     if ((numberOfRowsEl.value * betValueEl.value) > balance ){
         conditionsMeet=false;
         infoPanelEl.innerText="More money needed to play";
-    } else {
-        conditionsMeet= true;
-    }
+    } 
     playRound();
 }
 
