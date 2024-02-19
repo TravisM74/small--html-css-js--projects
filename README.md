@@ -7,8 +7,7 @@
 <p>
   <h2>Age Calculator</h2>
 </p>
-![Caluclator Image]
-(Age-ss.png)
+![Caluclator Image](https://github.com/Travism74/small--html-cs-js--projects/screenshots/Age-ss.png)
 <p>Enter your date of birth to calculate your age in years </p>
 <p>
   <h2>Calculator</h2>
