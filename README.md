@@ -24,7 +24,7 @@
 <p>
   <h2>Image Viewer</h2>
  
-   <img src="/screenshots/imagePreview.png">
+   <img src="/screenshots/ImagePreview.png">
 </p>
 <p>Search of royalty free pictues</p>>
 <p>
