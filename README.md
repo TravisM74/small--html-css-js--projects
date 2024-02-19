@@ -2,4 +2,4 @@
 
 
 Age Calculator
-![Caluclator Image](Age-ss.png)
+![Caluclator Image](/creenshots/Age-ss.png)
