@@ -6,7 +6,7 @@
 
 <p>
   <h2>Age Calculator</h2>
-  ![Caluclator Image](/screenshots/Age-ss.png)
+  ![Caluclator Image](./screenshots/Age-ss.png)
 </p>
 <p>Enter your date of birth to calculate your age in years </p>
 <p>
